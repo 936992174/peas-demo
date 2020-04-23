@@ -14,7 +14,7 @@
 	<!-- <property name="LOG_HOME" value="D:/data/logs" /> -->
 
 	<!-- 应用名称：和统一配置中的项目代码保持一致（小写） -->
-	<property name="cloud_server" value="peas-eureka" />
+	<property name="APP_NAME" value="peas-eureka" />
 	<!-- 日期，按照日期来定模-->
 	<property name="TODAY_DATE" value="%d{yyyy-MM-dd}"/>
 	<!--日志文件保留天数 -->
@@ -23,7 +23,7 @@
 	<property name="LOG_MAX_SIZE" value="100MB" />
 	<!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径 -->
 	<!--应用日志文件保存路径 -->
-	<property name="LOG_APP_HOME" value="/home/appdev/logs" />
+	<property name="LOG_APP_HOME" value="/home/appdev/logs/${APP_NAME}/${TODAY_DATE}" />
 
 	<!--=========================== 按照每天生成日志文件：默认配置=================================== -->
 	<!--若输出的日志级别为error,发送邮件通知-->
